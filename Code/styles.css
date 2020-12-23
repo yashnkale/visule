@@ -26,7 +26,7 @@ label.logo{
 
   color:#f5f5f7;
   font-size: 35px;
-  line-height: 95px;
+  line-height: 2.4;
   padding: 0 100px;
   font-weight: bold;
 }
@@ -76,7 +76,7 @@ a.active,a:hover{
 
 @media (max-width: 952px) {
   label.logo{
-    line-height: 2.7;
+    line-height: 2.4;
     padding-left: 25px;
   }
 
@@ -93,10 +93,8 @@ a.active,a:hover{
 
 
   label.logo{
-    padding: 0;
-    margin-top: 10;
     
-    
+    line-height: 2.4;
   }
 
 
@@ -115,6 +113,12 @@ a.active,a:hover{
     left: -100%;
     text-align: center;
     transition: all .5s;
+
+  }
+
+  li{
+
+    padding-top: 30px;
 
   }
 

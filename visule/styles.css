@@ -1,0 +1,203 @@
+*{
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+html,body{
+  height: 100%;
+  min-height: 100%;
+  position: relative;
+}
+
+body{
+  font-family: 'Montserrat', sans-serif;
+  margin: 0 0 100px 0;
+    /* bottom = footer height */
+  
+}
+ 
+nav label{
+
+  font-weight: 600;
+  word-spacing: 10px;
+  padding: 0px 0 0 40px;
+  line-height: 3.8;
+  font-size: 24px;
+  letter-spacing: 6px;
+
+}
+
+nav label a{
+
+  text-decoration: none;
+  color:#000;
+
+}
+
+nav{
+
+  background-color: #fff;
+  
+}
+
+ul{
+
+  float: right;
+
+}
+
+ul li{
+
+  display: inline-block;
+  margin: 30px;
+  padding: 10px;
+  list-style: none;
+}
+
+
+ul li a{
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+
+}
+
+
+ul li a:hover{
+
+    color: #8CAB5C;
+
+}
+
+ul li .active{
+
+  color: #8CAB5C;
+}
+
+.mobile-nav{
+
+  display: none;
+}
+
+/*responsive for mobile device*/
+
+@media(max-width:800px){
+
+nav ul{
+  display: none;
+}
+
+.mobile-nav{
+  overflow: hidden;
+  display: block;
+}
+
+
+.mobile-nav a{
+
+  padding: 14px 16px;
+  margin: 90px;
+}
+
+.mobile-nav li a{
+
+  margin: 90px;
+  padding: 0;
+  
+
+}
+
+.mobile-nav ul{
+    text-align: center;
+    font-size: 12px;
+    margin: 2px;
+
+}
+
+.mobile-nav a.icon{
+
+  color: #000;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 25px;
+
+}
+
+.mobile-nav a:hover{
+
+  color:#8CAB5C
+
+}
+
+
+  
+
+
+
+}
+
+/*end of responsive design*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*footer starts*/
+
+footer{
+    
+    border-top: 1px solid #999b84;
+    clear: both;
+    text-align: center;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+    
+}
+
+.footer-content{
+margin-top: 10px;
+
+}
+
+
+/*footer ends*/

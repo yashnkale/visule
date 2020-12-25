@@ -5,6 +5,11 @@
 
 }
 
+body, html{
+
+  height: 100%;
+}
+
 .navbar {
   
   border-bottom: 1px solid  #DDDDDD;
@@ -12,26 +17,27 @@
 }
 
 ul.navbar-nav{
-  margin-left: auto;
+  margin-left: auto;    /*shifted navbar to the right in desktop mode*/
 }
 
 .navbar-brand{
 
   font-size: 24px;
-  letter-spacing: 6px;
+  letter-spacing: 6px;      /*styled my logo as a text*/
   font-weight: 600;
 }
 
 
 .navbar-collapse {
-  text-align: center;
+  text-align: center;     /*brought links to center in collapsed mode*/
 }
 
 
-.navbar-light .navbar-nav .nav-link {
+.navbar-light .navbar-nav .nav-link {     
+  
   font-size: 13px;
-  color: #000;
-  font-weight: 600;
+  color: #000;          
+  font-weight: 600;       /*colored the links as black*/
 }
 
 
@@ -43,12 +49,12 @@ ul.navbar-nav{
 
 .navbar-light .navbar-nav .nav-link{
 
-  padding: 20px;
+  padding: 20px;      /*increased dropdown menu size*/
 
 }
 
 .navbar-light .navbar-nav #active{
-  color: #8CAB5C;
+  color: #8CAB5C;       /*activated link color*/
 }
 
 button.navbar-toggler.collapsed{
@@ -58,9 +64,55 @@ button.navbar-toggler.collapsed{
 
 span.navbar-toggler-icon{
   width: 20px;
-  height: 20px;
+  height: 20px;       /*hamburger size*/
 }
 
 .navbar-light .navbar-toggler{
-  border-color: #fff;
+  border-color:#fff;   
 }
+
+button.navbar-toggler{
+
+  border: 0;
+
+}
+
+
+/*styling advisory message*/
+
+p.advisory-text{
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight:400;
+  word-spacing: 1.5px;
+  text-align: center;
+  color: #86868b;
+  margin: 15px;
+  
+}
+
+
+
+/*styling Jumbotron*/
+
+.jumbotron{
+  
+  background-image: url("Images/visule\ jumbotron.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+h1.display-4{
+  color: #fff;
+  font-size: 3vw;
+  text-align: center;
+}
+
+p.lead{
+  font-size: 2vw;
+  text-align: center;
+  color: #86868b;
+
+}
+
+

@@ -100,19 +100,23 @@ p.advisory-text{
   background-image: url("Images/visule\ jumbotron.jpg");
   background-size: cover;
   background-position: center;
+  padding-bottom: 20%;
 }
 
 h1.display-4{
   color: #fff;
-  font-size: 3vw;
-  text-align: center;
+  font-size: 5vw;
+  
 }
 
 p.lead{
-  font-size: 2vw;
-  text-align: center;
   color: #86868b;
+  font-size: 2.4vw;
 
 }
 
+div.container{
+  padding-left: 10px;
+  margin-left: 10px;
+}
 

@@ -1,0 +1,131 @@
+
+*{
+
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+body, html{
+
+  height: 100%;
+}
+
+.navbar {
+  
+  border-bottom: 1px solid  #DDDDDD;
+  
+}
+
+ul.navbar-nav{
+  margin-left: auto;    /*shifted navbar to the right in desktop mode*/
+}
+
+.navbar-brand{
+
+  font-size: 24px;
+  letter-spacing: 6px;      /*styled my logo as a text*/
+  font-weight: 600;
+}
+
+
+.navbar-collapse {
+  text-align: center;     /*brought links to center in collapsed mode*/
+}
+
+
+.navbar-light .navbar-nav .nav-link {     
+  
+  font-size: 13px;
+  color: #000;          
+  font-weight: 600;       /*colored the links as black*/
+}
+
+
+.navbar-light .navbar-nav .nav-link:hover{
+
+  color: #8CAB5C;
+
+}
+
+.navbar-light .navbar-nav .nav-link{
+
+  padding: 20px;      /*increased dropdown menu size*/
+
+}
+
+.navbar-light .navbar-nav #active{
+  color: #8CAB5C;       /*activated link color*/
+}
+
+button.navbar-toggler.collapsed{
+  border-color: #fff;
+
+}
+
+span.navbar-toggler-icon{
+  width: 20px;
+  height: 20px;       /*hamburger size*/
+}
+
+.navbar-light .navbar-toggler{
+  border-color:#fff;   
+}
+
+button.navbar-toggler{
+
+  border: 0;
+
+}
+
+
+/*styling advisory message*/
+
+p.advisory-text{
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight:400;
+  word-spacing: 1.5px;
+  text-align: center;
+  color: #86868b;
+  margin: 15px;
+ 
+  
+}
+
+
+
+
+form{
+
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+div.form-group{
+
+  font-size: 0.9rem;
+  padding: 10px 0 10px 0;
+
+  
+}
+
+input.form-control{
+
+  font-size: 0.8rem;
+}
+
+
+
+
+button.btn.btn-primary{
+  
+  background-color: #8CAB5C;
+  border-color: #fff;
+  border-radius: 20px;
+}
+
+button.btn.btn-primary:hover{
+
+  box-shadow: 0 8px 11px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+}

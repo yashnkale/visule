@@ -93,35 +93,21 @@ p.advisory-text{
 }
 
 
+/*styling about content*/
 
-/*styling Jumbotron*/
-
-.jumbotron{
-  
-  background-image: url("Images/visule-jumbotron.jpg");
-  background-size: cover;
-  background-position: center;
-  padding-bottom: 20%;
+div#about-values.container-fluid {
+  padding: 60px 50px;
+  text-align: center;
+  border-top:  1px solid  #DDDDDD;
 }
 
-h1.display-4{
-  color: #fff;
-  font-size: 5vw;
-  
+
+div#rest.container-fluid{
+
+  padding-top: 30px;
+  text-align: center;
 }
 
-p.lead{
-  color: #86868b;
-  font-size: 2.4vw;
-
-}
-
-.jumbotron a{
-
-  font-size: 2vw;
-
-}
-
-/*styling jumbotron ended*/
+/*styling about content ends*/
 
 

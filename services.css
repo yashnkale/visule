@@ -93,105 +93,16 @@ p.advisory-text{
 }
 
 
-
-/*styling Jumbotron*/
-
-.jumbotron{
-  
-  background-image: url("Images/visule-jumbotron.jpg");
-  background-size: cover;
-  background-position: center;
-  padding-bottom: 20%;
-}
-
 h1.display-4{
-  color: #fff;
-  font-size: 5vw;
-  
+  font-size: 2rem;
 }
 
 p.lead{
-  color: #86868b;
-  font-size: 2.4vw;
+
+  font-size: 1rem;
 
 }
 
-.jumbotron a{
-  
-  font-size: 2vw;
-  padding-left: 2px;
-
-}
-
-/*styling jumbotron ended*/
-
-
-img.img-fluid{
-
-  padding: 10px;
-}
-
-div.text-head p{
-
-  text-align: center;
-  font-size: 15px;
-  padding: 20px;
-  font-weight: 900;
-  margin-top: 30px;
-
-
-}
-
-div.text-model p{
-
-  text-align: center;
-  font-size: 15px;
-  padding: 20px;
-  font-weight: 900;
-  margin-top: 30px;
-
-
-}
-
-div.text-inspire p{
-
-  text-align: center;
-  font-size: 15px;
-  margin-top: 30px;
-  padding: 20px;
-  font-weight: 900;
-
-
-}
-
-div.text-last h3{
-
-  text-align: center;
-  font-size: 30px;
-  margin-top: 30px;
-  padding: 20px;
-  font-weight: 900;
-
-
-}
-
-div.text-last p{
-
-  text-align: center;
-  font-size: 15px;
-  padding: 0 20px 0 20px;
-  font-weight: 900;
-
-}
-
-div.text-last{
-
-  padding-bottom: 30px;
-}
-
-
-
-/*styling services content*/
 
 
 div.card{

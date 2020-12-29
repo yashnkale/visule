@@ -120,3 +120,31 @@ button.btn.btn-primary{
   background-color: #8CAB5C;
   border: #fff;
 }
+
+
+
+
+form{
+
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+div.form-group{
+
+  font-size: 0.9rem;
+  padding: 10px 0 10px 0;
+
+  
+}
+
+input.form-control{
+
+  font-size: 0.8rem;
+}
+
+
+#submit-photo button.btn.btn-primary{
+
+  margin-left: 20px;
+}

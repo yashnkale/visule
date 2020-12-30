@@ -157,38 +157,53 @@
 
 
 
-    <form>
+    <form method="POST" name="google-sheet">
     
 
       <div class="form-group">
-        <label for="Firstname">First name:</label>
-        <input type="text" class="form-control" placeholder="Enter your first name..."  value="" required>
+        <label for="fname">First name:</label>
+        <input type="text" class="form-control" name="Firstname" placeholder="Enter your first name..." value="" required>
+        
       </div>
 
       <div class="form-group">
-        <label for="Lastname">Last name:</label>
-        <input type="text" class="form-control" placeholder="Enter your last name..."  value="" required>
+        <label for="lname">Last name:</label>
+        <input type="text" class="form-control" name="Lastname" placeholder="Enter your last name..."  value="" required>
       </div>
 
 
         
       <div class="form-group">
         <label for="exampleInputEmail1">Email:</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email address..."  value="" required>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="Email" placeholder="Enter your email address..."  value="" required>
         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
       </div>
       
 
       <div class="form-group">
         <label for="message">Message:</label>
-        <input type="text" class="form-control" placeholder="Enter your message..."  value="" required>
+        <input type="text" class="form-control" name="Message" placeholder="Enter your message..."  value="" required>
       </div>
 
-
-      <button type="submit" class="btn btn-primary">Submit</button>
+      <div class="form-group">
+        <button type="submit" name="submit" class="btn btn-primary">Submit</button>
+      </div>
+      
 
     </form><br><br><br>
- 
+
+
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbwFFwnjS1-ZXvlLtnjKmdjepViTNxfoPwQqCrh7R0nY1l4z4tct/exec'
+      const form = document.forms['google-sheet']
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => alert("Thanks for reaching out! We will contact you soon..."))
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
  
  
  

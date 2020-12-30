@@ -124,24 +124,24 @@
 
     <section id="submit-photo">
 
-        <form>
+        <form method="POST" name="google-sheet">
       
 
           <div class="form-group">
             <label for="Firstname">First name:</label>
-            <input type="text" class="form-control" placeholder="Enter your first name..."  value="" required>
+            <input type="text" class="form-control" name="Firstname" placeholder="Enter your first name..."  value="" required>
           </div>
     
           <div class="form-group">
             <label for="Lastname">Last name:</label>
-            <input type="text" class="form-control" placeholder="Enter your last name..."  value="" required>
+            <input type="text" class="form-control" name="Lastname" placeholder="Enter your last name..."  value="" required>
           </div>
     
     
             
           <div class="form-group">
             <label for="exampleInputEmail1">Email:</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email address..."  value="" required>
+            <input type="email" class="form-control" name="Email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email address..."  value="" required>
             <small id="emailHelp" class="form-text text-muted">Please note you will recieve your photo on this email.</small>
           </div>
           
@@ -151,7 +151,7 @@
           
             <div class="form-group">
               <label for="exampleFormControlFile1">Upload Photo:</label>
-              <input type="file" class="form-control-file" id="exampleFormControlFile1"  value="" required>
+              <input type="file" class="form-control-file" name="Image" id="exampleFormControlFile1"  value="" required>
             </div>
          
 
@@ -159,7 +159,7 @@
           
           <div class="form-group">
             <label for="Instagram">Instagram:</label>
-            <input type="text" class="form-control" placeholder="Enter your instagram id..."  value="" required>
+            <input type="text" class="form-control" name="Instagram" placeholder="Enter your instagram id..."  value="" required>
             <small id="emailHelp" class="form-text text-muted">We will notify you when your photo is ready.</small>
           </div>
           
@@ -176,11 +176,21 @@
 
 
 
-          <button type="submit" class="btn btn-primary" >Submit</button>
+          <button type="submit" name="submit" class="btn btn-primary" >Submit</button>
 
         </form>
 
-
+        <script>
+          const scriptURL = 'https://script.google.com/macros/s/AKfycbxJefw1A5Q7R3QS5T2jwLR6FfoYwlKeofkLG4vRrZcPnovzyq4/exec'
+          const form = document.forms['google-sheet']
+        
+          form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+              .then(response => alert("We recieved your photo. Looks good!"))
+              .catch(error => console.error('Error!', error.message))
+          })
+        </script>
 
     
 

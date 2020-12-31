@@ -122,9 +122,9 @@
 
     <h3 style="text-align: center; font-weight: 600; padding-bottom: 20px;">Photo Editing</h3>
 
-    <div class="alert alert-success" role="alert" style="margin: 0 3px 20px 3px;">
+    <div class="alert alert-success" role="alert" style="margin: 0 5px 20px 5px;">
       <h4 class="alert-heading">Security:</h4>
-      <p>We will only contact you on instagram via @yshkale and will only ask you to pay after your photo is edited through upi.</p>
+      <p>We will only contact you on instagram via @yshkale and will only ask you to pay after your photo is edited.</p>
       <hr>
       <p class="mb-0">Make sure you spell your instagram id correctly.</p>
     </div>
@@ -173,13 +173,36 @@
           </div>
           
           
+          <div class="form-group">
+            <label for="payment">Amount:</label>
+            <input class="form-control" type="text" placeholder="₹50" readonly>
+
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="payment-type" id="inlineRadio1" value="GooglePay" required>
+              <label class="form-check-label" for="inlineRadio1">GooglePay</label>
+            </div>
+  
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="payment-type" id="inlineRadio1" value="PhonePay" required>
+              <label class="form-check-label" for="inlineRadio1">PhonePay</label>
+            </div>
+  
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="payment-type" id="inlineRadio1" value="Paytm" required>
+              <label class="form-check-label" for="inlineRadio1">Paytm</label>
+            </div>
+
+
+          </div>
+
+
           
 
           
           
           <div class="form-check" style="font-size: 0.8rem; padding-bottom: 15px;">
             <input type="checkbox" class="form-check-input" id="Checkbox" value="" required>
-            <label class="form-check-label" for="exampleCheck1"> By clicking Submit, you agree to our <a href="terms.docx" target="_blank">Terms and Conditions.</a></label>
+            <label class="form-check-label" for="exampleCheck1"> By clicking Submit, you agree to our <a href="terms.html">Terms and Conditions.</a></label>
           </div>
           
 

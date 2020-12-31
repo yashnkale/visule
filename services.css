@@ -178,3 +178,10 @@ span.text-muted{
   font-size: 0.8rem;
   
 }
+
+
+
+div.form-check.form-check-inline{
+  margin-top: 10px;
+  font-size: 0.8rem;
+}
